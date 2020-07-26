@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   </head>
   <!--HTML code starts here -->
-   <!--HTML code ends here -->
+  <div class="flexbox">
+    <div class="header">
+      <header>
+      <h1>HopperHacks<h1> 
+    </div>
+
+    <div class="top">
+      <h2>Input your password and we'll tell you how long you can keep it<h2>
+    </div>
+
+    <div class="description">
+      <p>Regularly updating your password can prevent being hacked and keep your information safe. Good passwords typically contain at least 8 characters, 1 uppercase, 1 lowercase, 1 number, and at least one special characters. </p>
+    </div>
+
+    <div class="main">
+      <input id="pass" type="password"></input>
+      <button onclick="accessPassword()">Check</button>
+    </div>
+
+    <div>
+      <p id="days"></p> 
+    </div>
+
+  </div> 
+
+  <!--HTML code ends here -->
+  <!--title, what website do, tab for account storage, user account registration  --> 
   <body>
     <script src="script.js"></script>
-    <h1>Title<h1>
-    
   </body>
 </html>
