@@ -59,7 +59,7 @@ button:hover{
 .hopper{
   border-radius: 50%;
   max-width: 50%;
-  animation: rotation 1s linear infinite;
+  animation: rotation 3s linear infinite;
   transform: translate(50px, 100px);
 }
 
