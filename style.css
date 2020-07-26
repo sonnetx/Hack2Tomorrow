@@ -56,5 +56,15 @@ button:hover{
 
 }
 
+.hopper{
+  border-radius: 50%;
+  max-width: 50%;
+  animation: rotation 1s linear infinite;
+  transform: translate(50px, 100px);
+}
 
+@keyframes rotation{
+  0% {transform: rotate(0 deg)}
+  50% {transform: rotate(180 deg)}
+}
 
