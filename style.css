@@ -4,20 +4,19 @@ body {
   padding-bottom: 3px;
 }
 
-header {
-  font-family: 'Abril Fatface', cursive;
+h1{
+  font-size:2.5em;
+  padding-top:1%;
+  font-family: 'Notable', sans-serif;
   text-align: center;
-  font-size: 2em;
-  margin: 5px;
-  padding: 10px;
-  
 }
 .main{
   padding: 20px;
   
 }
 .description{
-  width:50%;
+  width:60%;
+  font-size: 2em;
 }
 
 .flexbox{
@@ -56,15 +55,5 @@ button:hover{
 
 }
 
-.hopper{
-  border-radius: 50%;
-  max-width: 50%;
-  animation: rotation 3s linear infinite;
-  transform: translate(50px, 100px);
-}
 
-@keyframes rotation{
-  0% {transform: rotate(0 deg)}
-  50% {transform: rotate(180 deg)}
-}
 
