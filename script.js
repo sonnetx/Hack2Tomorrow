@@ -1,13 +1,36 @@
-//create a class for individual accounts
-  //class should have constructor, that stores the email, password for the site, a list of passwords, and a function send email or notification when password needs to be updated (every 30-42 days)
-  class Account{
-    constructor(e,pass){
-      this.email = e;
-      this.password = pass;
-      this.list = []; //empty array for list of passwords
-      
-    }
+function checkPasswordStrength(password){
+  let points =0;
+  //checks length of password
+  if(password.length==8){
+    points++;
+  }else if(password.length>8){
+    points +=2;
+  }
+  else{
+    points += 0;
   }
 
-//create a class for system of accounts
+
+  for(let i=0;i<password.length;i++){
+    if(password.charAt(i)>='0' && password.charAt(i)<='9'){ //checks if numbers
+      points++;
+    }else if(password.charAt(i)>='A' && password.charAt(i)<='Z'){ //checks if uppercase
+      points++;
+    } else{ 
+      points+=0.5;
+    }
+  //need to check for special characters
+  }
+  if(points<25){
+    points = points/2;
+  }
+  var days = points * 4.5;
+  //points times five is the number of days until changing
+  document.getElementById("days").innerHTML =("Days:"+days);
+}
+
+function accessPassword(){
+  var password = document.getElementById("pass").value;
+  checkPasswordStrength(password);
+}
 
