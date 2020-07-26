@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(161, 218, 255);
+  font-family: 'Recursive', sans-serif;
+  padding-bottom: 3px;
+}
+
+header {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  padding: 10px;
+  
+}
+.main{
+  padding: 20px;
+  
+}
+.description{
+  width:50%;
+}
+
+.flexbox{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+#pass{
+  width:25em;
+  height: 2em;
+  border-radius: 2%;
+  font-size:2em;
+}
+
+button{
+  width: 5em;
+  height:5em;
+  border-radius:25%;
+  background-color:navy;
+  color:white;
+  font-family: 'Recursive', sans-serif;
+  transition: 0.5s;
+}
+
+button:hover{
+  background-color:white;
+  color:navy;
+  transition: 0.5s;
+}
+
+#days{
+  font-size:3em;
+  padding:2%;
+
+}
+
+
+
